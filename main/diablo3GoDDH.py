@@ -36,7 +36,7 @@ def getGameRegion():
     # calculate the region of the entire game
     topRightX = region[0] + region[2] # left + width
     topRightY = region[1] # top
-    GAME_REGION = (topRightX - 640, topRightY, 640, 480) # the game screen is always 640 x 480
+    GAME_REGION = (topRightX - 1920, topRightY, 1920, 1080) # the game screen is always 640 x 480
     logging.debug('Game region found: %s' % (GAME_REGION,))
 
 def imPath(filename):
